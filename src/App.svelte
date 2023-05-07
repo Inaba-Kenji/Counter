@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import ToDoInputForm from "./ToDoinputForm.svelte";
   import ToDoList from "./ToDoList.svelte";
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import { toDoItems} from "./store";
+  import { toDoItems } from "./store";
 
   // xのボタン
   function removeFromList(index) {

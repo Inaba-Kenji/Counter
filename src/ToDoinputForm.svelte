@@ -1,14 +1,14 @@
-<script>
+<script lang="ts">
   import { toDoItems } from "./store";
 
-  let newItem = "new"
-  let count = 0
-  let total = 0
-  let texts = ""
+  let newItem: string = "new";
+  let count: number = 0;
+  let total: number = 0;
+  let texts: string = "";
 
   $: {
     total = $toDoItems.reduce((acc, item) => acc + item.number, 0);
-	}
+  }
 
   $: {
     texts = $toDoItems.reduce((acc, item) => acc + item.text + ", ", "");
